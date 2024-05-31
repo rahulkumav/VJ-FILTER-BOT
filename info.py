@@ -19,7 +19,7 @@ def is_enabled(value, default):
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('20489101', ''))
-API_HASH = environ.get('Dc673488548bbb408aab0785ec787911', '')
+API_HASH = environ.get('Dc673488548bbb408aab0785ec7879f1', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -52,8 +52,8 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "techvjfilterbot")
+DATABASE_URI = environ.get('mongodb+srv://krahul724855:<crazy&xyz>@cluster0.mj7zqwi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', "")
+DATABASE_NAME = environ.get('krahul', "techvjfilterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'techvjcollection')
 
 # Premium And Referal Settings
@@ -67,8 +67,8 @@ PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟ�
 OWNER_USERNAME = environ.get('OWNER_USERNAME', 'kingvj01') # owner username without @
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', '')
-CHNL_LNK = environ.get('CHNL_LNK', '')
+GRP_LNK = environ.get('https://t.me/+ZEx0OvGN-Qs1ZjZl', '')
+CHNL_LNK = environ.get('https://t.me/+ZEx0OvGN-Qs1ZjZl', '')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_To_Open_Linkl')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/How_To_Open_Linkl')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '') # Support Chat Link Without https:// or @
